@@ -1,12 +1,4 @@
-import streamDeck, {
-  action,
-  DialAction,
-  DialRotateEvent,
-  DialDownEvent,
-  WillAppearEvent,
-  DidReceiveSettingsEvent,
-  SingletonAction
-} from "@elgato/streamdeck";
+import { action, SingletonAction, KeyDownEvent, WillAppearEvent, WillDisappearEvent, streamDeck, DialRotateEvent } from "@elgato/streamdeck";
 
 import renderVolumeImage from "../utils/volumeRenderer";
 import { Smoother } from "../utils/smoother";

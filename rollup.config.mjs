@@ -1,7 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
-import { terser } from "@rollup/plugin-terser";
+//import { terser } from "@rollup/plugin-terser";
 import { fileURLToPath } from "url";
 import path from "path";
 
@@ -24,11 +24,7 @@ export default {
       preferBuiltins: true
     }),
     commonjs(),
-    typescript({
-      tsconfig: path.join(__dirname, "tsconfig.json"),
-      sourceMap: true
-    }),
-    terser()
+
   ],
   onwarn: (warning, warn) => {
     if (warning.code === "CIRCULAR_DEPENDENCY") return;
