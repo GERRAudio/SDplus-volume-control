@@ -1,0 +1,20 @@
+{
+  "Actions": {},
+  "Author": "example",
+  "CodePath": "dist/index.js",
+  "SDKVersion": 2,
+  "PluginUUID": "com.example.streamdeckplus.volume-dial",
+  "Name": "Volume Dial Example",
+  "Description": "Demo volume dial with smoothing and custom rendering",
+  "Version": "0.1.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ]
+}
